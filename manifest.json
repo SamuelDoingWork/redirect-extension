@@ -1,0 +1,20 @@
+{
+    "name": "URL Redirect",
+    "version": "1.0",
+    "description": "Checks URL and redirects as required.",
+    "author": "me my self and I",
+    "manifest_version": 2,
+    "background": {
+        "persistent": true,
+        "scripts": ["redirect.js"]
+    },
+    "browser_action": {
+        "default_title": "Request redirect",
+        "default_popup": "popup.html"
+    },
+     "permissions": [
+        "webRequestBlocking",
+        "webRequest",
+        "*://*/"
+      ]
+  }

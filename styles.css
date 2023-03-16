@@ -1,0 +1,75 @@
+main {
+    width: 500px;
+    height: 130px;
+	background: linear-gradient(-75deg, #7a20a3, #910f40, #12566e, #1c725e41);
+    animation: gradient 4s ease infinite;
+    background-size: 300% 300%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.header-list {
+    display: flex;
+    justify-content: space-around;
+    font-size: medium;
+    font-weight: 700;
+    color: #dbdbdb;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-item {
+    display: flex;
+    flex-grow: 1;
+    width: 40%;
+    justify-content: center;
+}
+
+.text {
+    height: 20px;
+    border-radius: 3px;
+    border-color: transparent;
+}
+
+.text:focus {
+    outline-offset: 1px;
+    outline-width: 2px;
+    outline-color: rgb(104, 104, 129);
+    outline-style: groove;
+}
+
+button {
+    width: 40px;
+    height: 30px;
+    background-color: #105e836e;
+    margin-top: 15px;
+    margin-left: 85%;
+    font-weight: bolder;
+    color: #05273d;
+    border-radius: 4px;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3d9c6d5e;
+}
+
+button:active {
+    background-color: #08979c96;
+}
