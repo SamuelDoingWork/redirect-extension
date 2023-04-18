@@ -28,4 +28,5 @@ checkbox.addEventListener("change", () => {
   chrome.runtime.sendMessage({ command: "Switch", value });
 });
 
+
 Read();
